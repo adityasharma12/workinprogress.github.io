@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+</title>
+
+<style type="text/css">
+
+body{
+  background-color: black;
+   height: 10%; 
+    width:  100vw;
+
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active{
+	background-color: white;
+	color: black;
+}
+
+div {
+ 
+  border: solid 0px ;
+  padding: 120px;
+  width: 1000px; 
+  height: 200px;
+  transform: translate3d(-50%,-50%,0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(10deg,black,red,black);
+  background-clip: content-box;
+  background-size: 400% 400%;
+  border-color: currentColor; 
+  animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;  
+  transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: transform;
+}
+
+@keyframes partytime { 
+    0%{background-position:83% 0%}
+    50%{background-position:18% 100%}
+    100%{background-position:83% 0%}
+}
+
+
+p {
+	transform: perspective(1600px) translate3d(0, 0, 100px);
+	transition: transform 0.25s linear;
+	text-align: center;
+	font-size: 100px;
+	margin: 20px 0 20px 0;
+	font-family: Monoton;
+	animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+p:hover {
+  animation: neon 1s infinite;
+  cursor: progress;
+}
+
+@-webkit-keyframes neon{
+0%{ color: transparent; }
+10%{color: black;}
+20%{ color: transparent; }
+30%{ color: white; }
+40%{color: transparent;}
+50%{ color: red; }
+}
+
+</style>
+</head>
+
+<body>
+<h1><center> <style color:green>$$$$$$$</style> </center></h1>
+<ul>
+	<li><a class="active" href="index.html">Home</a></li>
+	<li><a href="work.html">Work</a></li>
+	<li style="float:right"><a href="about.html">About</a></li>
+</ul>
+
+<br><br>
+
+<div class="sqaure"> 
+
+<p class="neon">Photography</p>
+
+</div>
+
+<br><br><br>
+
+<a id="work"></a>
+
+<br><br><br><br><br>
+
+<hr color:white>
+
+</body>
+</html>
